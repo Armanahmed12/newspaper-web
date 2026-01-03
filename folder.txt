@@ -1,0 +1,39 @@
+📦 src
+ ┣ 📂assets
+ ┣ 📂app
+ ┃ ┣ 📜App.jsx
+ ┃ ┣ 📜main.jsx
+ ┃ ┣ 📜router.jsx
+ ┃ ┗ 📜App.css
+ ┣ 📂features
+ ┃ ┣ 📂auth
+ ┃ ┃ ┣ 📜Login.jsx
+ ┃ ┃ ┣ 📜Register.jsx
+ ┃ ┃ ┣ 📜AuthProvider.jsx
+ ┃ ┃ ┗ 📜PrivateRoute.jsx
+ ┃ ┣ 📂news
+ ┃ ┃ ┣ 📜CategoryNews.jsx
+ ┃ ┃ ┣ 📜NewsDetails.jsx
+ ┃ ┃ ┣ 📜NewsCard.jsx
+ ┃ ┃ ┗ 📜NewsDetailsCard.jsx
+ ┃ ┗ 📂home
+ ┃   ┣ 📜Home.jsx
+ ┃   ┣ 📜Categories.jsx
+ ┃   ┣ 📜LatestNews.jsx
+ ┃   ┗ 📜Loading.jsx
+ ┣ 📂layouts
+ ┃ ┣ 📜AuthLayout.jsx
+ ┃ ┗ 📜HomeLayout.jsx
+ ┣ 📂shared
+ ┃ ┣ 📜Navbar.jsx
+ ┃ ┣ 📜Header.jsx
+ ┃ ┗ 📂aside
+ ┃   ┣ 📜LeftAside.jsx
+ ┃   ┣ 📜RightAside.jsx
+ ┃   ┣ 📜FindUs.jsx
+ ┃   ┣ 📜Qzone.jsx
+ ┃   ┗ 📜SocialLogin.jsx
+ ┣ 📂services
+ ┃ ┗ 📂firebase
+ ┃   ┗ 📜firebase.config.js
+ ┣ 📜index.css

@@ -2,6 +2,8 @@ import React from 'react';
 import Header from '../shared/Header';
 import LatestNews from '../components/LatestNews';
 import Navbar from '../shared/Navbar';
+import LeftSide from '../components/LeftSide';
+import { Outlet } from 'react-router';
 
 const HomeLayout = () => {
     return (
@@ -11,8 +13,9 @@ const HomeLayout = () => {
             </header>
             <LatestNews></LatestNews>
             <Navbar></Navbar>
-            <div className='mx-15'>
-                
+            <div style={{ display: "grid", gridTemplateColumns: "25% 50% 25%" }} className='mx-15 items-center justify-center'>
+                <LeftSide></LeftSide>
+                  <Outlet/>
             </div>
         </div>
     );

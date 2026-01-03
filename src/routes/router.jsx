@@ -11,8 +11,11 @@ import Home from "../pages/Home";
         element : <HomeLayout></HomeLayout>,
         children : [
             {
-                path : "",
+                path : "/",
                 element: <Home></Home>
+            },
+            {
+                
             }
         ]
     }

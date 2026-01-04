@@ -8,7 +8,7 @@ const Navbar = () => {
     <div className="flex justify-between items-center mx-15 my-5">
         <div></div>
       <div>
-        <NavLink className="text-red-500 mr-7 text-lg font-bold">Home</NavLink>
+        <NavLink to='/' className="text-red-500 mr-7 text-lg font-bold">Home</NavLink>
         <NavLink className="text-red-500 mr-7 text-lg font-bold">About</NavLink>
         <NavLink className="text-red-500 mr-7 text-lg font-bold">Career</NavLink>
       </div>

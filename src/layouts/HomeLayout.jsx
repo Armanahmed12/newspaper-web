@@ -13,7 +13,7 @@ const HomeLayout = () => {
             </header>
             <LatestNews></LatestNews>
             <Navbar></Navbar>
-            <div style={{ display: "grid", gridTemplateColumns: "25% 50% 25%" }} className='mx-15 items-center justify-center'>
+            <div style={{ display: "grid", gridTemplateColumns: "25% 50% 25%" }} className='mx-15 justify-center'>
                 <LeftSide></LeftSide>
                   <Outlet/>
             </div>

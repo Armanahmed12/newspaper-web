@@ -1,10 +1,10 @@
 import React from 'react';
+import CategoryNews from '../components/CategoryNews';
+import { Navigate } from 'react-router';
 
 const Home = () => {
     return (
-        <div>
-            dddfdf
-        </div>
+        <Navigate to="/category/0"></Navigate>
     );
 };
 

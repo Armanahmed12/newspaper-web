@@ -14,7 +14,9 @@ const Navbar = () => {
       </div>
       <div className="flex items-center justify-center gap-4">
         <FcBusinessman className="text-4xl"/>
-        <button className="text-white bg-red-500 px-4 py-2 rounded font-bold ">LogIn</button>
+        <button className="text-white bg-red-500 px-4 py-2 rounded font-bold ">
+          <NavLink to="/auth/logIn">LogIn</NavLink>
+        </button>
       </div>
     </div>
   );

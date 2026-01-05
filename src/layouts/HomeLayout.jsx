@@ -4,6 +4,7 @@ import LatestNews from '../components/LatestNews';
 import Navbar from '../shared/Navbar';
 import LeftSide from '../components/LeftSide';
 import { Outlet } from 'react-router';
+import RightSide from '../components/RightSide';
 
 const HomeLayout = () => {
     return (
@@ -16,6 +17,7 @@ const HomeLayout = () => {
             <div style={{ display: "grid", gridTemplateColumns: "25% 50% 25%" }} className='mx-15 justify-center'>
                 <LeftSide></LeftSide>
                   <Outlet/>
+                <RightSide></RightSide>
             </div>
         </div>
     );

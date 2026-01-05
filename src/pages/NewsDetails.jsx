@@ -1,6 +1,7 @@
 import React from 'react';
 import NewsDetailsCard from '../components/NewsDetailsCard';
 import Header from '../shared/Header';
+import RightSide from '../components/RightSide';
 
 const NewsDetails = () => {
     return (
@@ -14,7 +15,7 @@ const NewsDetails = () => {
           <NewsDetailsCard></NewsDetailsCard>
         </section>
         <aside className="col-span-3">
-           <h2>RightSide</h2>
+            <RightSide></RightSide>
         </aside>
       </main>
     </div>

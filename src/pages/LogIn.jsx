@@ -8,6 +8,7 @@ const LogIn = () => {
   const { logIn, resetPassword } = use(AuthContext);
 
   const location = useLocation();
+  console.log("locationLog", location)
   const navigate = useNavigate();
   const handleLogIn = (e) => {
     e.preventDefault();
@@ -18,7 +19,7 @@ const LogIn = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
-        navigate(`${location.search ? location.state : "/"}`);
+        navigate(`${location.state ? location.state : "/"}`);
       })
       .catch((error) => {
         const errorCode = error.code;

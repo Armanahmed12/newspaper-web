@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import NewsCard from './NewsCard';
+import Loading from '../shared/Loading';
 
 const CategoryNews = () => {
     const [categoryNews, setCategoryNews] = useState([]);
     const {id} = useParams();
-    console.log(id, "seeId");
     const allNews = useLoaderData();
     useEffect(() => {
     if (id == "0") {
@@ -23,12 +23,11 @@ const CategoryNews = () => {
       setCategoryNews(matchedCategoryNews);
     }
   }, [id, allNews]);
-  console.log(categoryNews.length);
     return (
         <div>
           <strong className='block mb-5'>Total {categoryNews?.length} news Found</strong>
             {
-              categoryNews && categoryNews.map(eachNews => <NewsCard key={eachNews.id} newsInfo={eachNews}></NewsCard>)
+              categoryNews.length > 0 ? categoryNews.map(eachNews => <NewsCard key={eachNews.id} newsInfo={eachNews}></NewsCard>) : <Loading></Loading>
             }
         </div>
     );
